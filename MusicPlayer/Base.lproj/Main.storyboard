@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Genre Button Screen-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GenreButtonScreen" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" colorLabel="IBBuiltInLabel-Yellow">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="KXN-WD-ZYm">
+                                <rect key="frame" x="107" y="298" width="200" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wm-7g-pzg">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.82978851913424656" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="AdM-FY-o1a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="40"/>
+                                        <state key="normal" title="BUTTON"/>
+                                        <connections>
+                                            <action selector="GenreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jyl-EU-KTb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiw-0H-OcX">
+                                        <rect key="frame" x="0.0" y="120" width="200" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.82978851909999995" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="dYn-NI-eqk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="40"/>
+                                        <state key="normal" title="BUTTON"/>
+                                        <connections>
+                                            <action selector="GenreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Guj-dC-0Z0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izK-gP-orF">
+                                        <rect key="frame" x="0.0" y="240" width="200" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.82978851909999995" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="jzP-5d-egW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="40"/>
+                                        <state key="normal" title="BUTTON"/>
+                                        <connections>
+                                            <action selector="GenreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dK5-J3-jjH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="PUB-K2-QOf"/>
+                                    <constraint firstAttribute="width" constant="200" id="YAE-m9-l0W"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xyg-2j-Mmh">
+                                <rect key="frame" x="107" y="690" width="90" height="60"/>
+                                <color key="backgroundColor" red="0.15816842819494997" green="0.42939663940523126" blue="0.91269177198410034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="zEi-h5-uU2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="30"/>
+                                <state key="normal" title="STOP">
+                                    <color key="titleColor" red="0.00087246192893397634" green="0.00015300383603529142" blue="9.8970035738353963e-05" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="StopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Psz-a5-JqK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jW0-Jw-oez">
+                                <rect key="frame" x="217" y="689" width="90" height="61"/>
+                                <color key="backgroundColor" red="0.55442458691379082" green="0.25236931123451434" blue="0.86938848350253806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="CSN-g2-xKX"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="hxr-Rf-Rnj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="30"/>
+                                <state key="normal" title="PLAY">
+                                    <color key="titleColor" red="0.00087246192890000004" green="0.00015300383599999999" blue="9.8970035739999999e-05" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="PlayButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="69h-Cf-aeW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94539181472081224" green="0.32072647004852439" blue="0.19464495280506733" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jW0-Jw-oez" secondAttribute="bottom" constant="86" id="2EL-WD-qxk"/>
+                            <constraint firstItem="jW0-Jw-oez" firstAttribute="trailing" secondItem="KXN-WD-ZYm" secondAttribute="trailing" id="2Ie-xB-PwL"/>
+                            <constraint firstItem="Xyg-2j-Mmh" firstAttribute="baseline" secondItem="jW0-Jw-oez" secondAttribute="baseline" id="2kB-4N-1b4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jW0-Jw-oez" secondAttribute="trailing" constant="107" id="5G8-W3-8lF"/>
+                            <constraint firstItem="Xyg-2j-Mmh" firstAttribute="top" secondItem="KXN-WD-ZYm" secondAttribute="bottom" constant="92" id="5QV-tE-4MB"/>
+                            <constraint firstItem="jW0-Jw-oez" firstAttribute="top" secondItem="KXN-WD-ZYm" secondAttribute="bottom" constant="66" id="7q9-kT-2oJ"/>
+                            <constraint firstItem="KXN-WD-ZYm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bty-9F-UH5"/>
+                            <constraint firstItem="jW0-Jw-oez" firstAttribute="leading" secondItem="Xyg-2j-Mmh" secondAttribute="trailing" constant="20" id="Ofx-WW-VoG"/>
+                            <constraint firstItem="KXN-WD-ZYm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZEr-Xm-Z1w"/>
+                            <constraint firstItem="jW0-Jw-oez" firstAttribute="firstBaseline" secondItem="KXN-WD-ZYm" secondAttribute="baseline" constant="40" symbolType="layoutAnchor" id="eCW-hj-k5J"/>
+                            <constraint firstItem="Xyg-2j-Mmh" firstAttribute="leading" secondItem="KXN-WD-ZYm" secondAttribute="leading" id="sa0-dC-v87"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>
